@@ -53,7 +53,7 @@ git clone --recurse-submodules https://github.com/highlight/highlight
 # if you want to run the backend in debug mode (attach GDB), run the following:
 # export COMPOSE_FILE=compose.yml:compose.dev.yml:compose.debug.yml
 # see the `docker/.env` file for other compose configurations.
-cd docker && docker compose up -d --build
+cd highlight/docker && docker-compose up -d --build
 ```
 
 After a brief frontend load time, the app should be accessible at https://localhost:3000
